@@ -1,5 +1,5 @@
 const caeserCipher = () => {
-  const shiftChar = (charCode, offset, key) => String.fromCharCode(((charCode - offset + key) % 26) + offset);
+  const shiftChar = (ascii, offset, k) => String.fromCharCode(((ascii - offset + k) % 26) + offset);
 
   const encrypt = (msg, key) => {
     let encryptedMsg = '';
@@ -9,7 +9,7 @@ const caeserCipher = () => {
       if (charCode >= 65 && charCode <= 90) {
         encryptedMsg += shiftChar(charCode, 65, key);
       } else if (charCode >= 97 && charCode <= 122) {
-        encryptedMsg += shiftChar(charCode, 97, key);        
+        encryptedMsg += shiftChar(charCode, 97, key);
       } else {
         encryptedMsg += msg[i];
       }
@@ -19,7 +19,7 @@ const caeserCipher = () => {
   };
 
   return {
-    encrypt
+    encrypt,
   };
 };
 

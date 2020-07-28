@@ -6,7 +6,7 @@ const Strings = (() => {
   return {
     capitalize,
     reverseString,
-  }
+  };
 })();
 
 export default Strings;

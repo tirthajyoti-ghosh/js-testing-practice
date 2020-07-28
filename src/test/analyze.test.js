@@ -1,6 +1,6 @@
-import analyze from "../js/Analyze.js";
+import analyze from '../js/Analyze';
 
-const array = analyze([1,8,3,4,2,6]);
+const array = analyze([1, 8, 3, 4, 2, 6]);
 
 test('analyze() returns an object', () => {
   expect(typeof array).toBe('object');
