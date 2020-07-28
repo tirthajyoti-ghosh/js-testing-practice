@@ -1,3 +1,6 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/extensions */
+
 import analyze from '../js/Analyze';
 
 const array = analyze([1, 8, 3, 4, 2, 6]);
