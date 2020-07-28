@@ -1,4 +1,4 @@
-import analyze from "../js/analyze.js";
+import analyze from "../js/Analyze.js";
 
 const array = analyze([1,8,3,4,2,6]);
 
